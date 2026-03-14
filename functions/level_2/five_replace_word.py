@@ -1,4 +1,5 @@
 def replace_word(text: str, replace_from: str, replace_to: str) -> str:
+    """Функция, которая заменяет в строке нужное слово (replace_from) на предложенное (replace_to)."""
     words = text.split()
 
     new_words = []
@@ -9,3 +10,5 @@ def replace_word(text: str, replace_from: str, replace_to: str) -> str:
             new_words.append(word)
 
     return ' '.join(new_words)
+
+# print(replace_word("Ходил я туда-сюда.", "\\n"))
